@@ -1,0 +1,24 @@
+body {
+    text-align: center; 
+    margin: 0 auto;
+}
+
+header, main {
+    background-color: #F7524C;
+}
+
+main {
+    min-height: 38em;
+}
+
+header, footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+article {
+    padding: 10;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
