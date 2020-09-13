@@ -1,5 +1,6 @@
 body {
-    text-align: center; 
+    text-align: center;
+    color: white;
     margin: 0 auto;
 }
 
@@ -8,17 +9,26 @@ header, main {
 }
 
 main {
-    min-height: 38em;
+    min-height: 48em;
 }
 
 header, footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 article {
     padding: 10;
     margin: 0 auto;
     max-width: 960px;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: underline;
 }
 

@@ -1,0 +1,28 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header div {
+    display: flex;
+}
+
+.header div img {
+    padding-right: 10px;
+}
+
+.header div:first-child {
+    text-align: left;
+}
+
+.header div:last-child {
+    justify-content: right;
+}
+
+.header div:last-child p {
+    padding-left: 10px;
+}
+
+.current {
+    text-decoration: underline;
+}
