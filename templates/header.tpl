@@ -5,6 +5,7 @@
         <p> Placeholder </p>
     </div>
     <div>
+        <p><a>/ / /</a></p>
         <p><a href="{{ url_for('home') }}">Helluland</a></p>
         <p><a href="{{ url_for('projects') }}">Verkefni</a></p>
         <p><a href="{{ url_for('about') }}">Um okkur</a></p>

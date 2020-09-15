@@ -2,6 +2,8 @@ body {
     text-align: center;
     color: white;
     margin: 0 auto;
+
+    font-family: "Arial";
 }
 
 header, main {
@@ -9,7 +11,7 @@ header, main {
 }
 
 main {
-    min-height: 48em;
+    min-height: 35em;
 }
 
 header, footer {
@@ -24,7 +26,7 @@ article {
 }
 
 a {
-    color: gray;
+    color: lightgray;
     text-decoration: none;
 }
 

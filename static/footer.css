@@ -1,3 +1,38 @@
 .footer {
-    color: black;
+    color: #F7524C;
+    font-size: 20px;
+
+}
+
+.heading {
+    text-align: left;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.footer_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.form div {
+    padding-bottom: 10px;
+}
+
+.text_grid {
+    display: flex;
+    justify-content: center;
+}
+
+.text_grid input {
+    width: 220px;
+}
+.text_grid input:first-child{
+    margin-right: 20px;
+    
+}
+
+.subject input, .textarea textarea {
+    width: 460px;
 }
