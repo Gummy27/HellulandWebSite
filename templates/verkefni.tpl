@@ -1,3 +1,0 @@
-{% extend projects.html %}
-
-{% endblock %}

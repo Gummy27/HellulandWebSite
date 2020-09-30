@@ -1,7 +1,8 @@
-.footer {
-    color: #F7524C;
-    font-size: 20px;
+@import "var.scss";
 
+.footer {
+    color: $primary;
+    font-size: 20px;
 }
 
 .heading {
@@ -38,16 +39,16 @@
 }
 
 input, textarea {
-    background-color: #F7524C;
+    background-color: $primary;
     border: 0px;
     padding: 10px;
-    color: white;
+    color: $secondary;
     font-style: italic;
     font-size: 14px;
 }
 
 ::placeholder {
-    color: white;
+    color: $secondary;
     text-decoration: none;
 }
 
@@ -78,20 +79,20 @@ input:focus {
   
 .fa-facebook {
     background: #3B5998;
-    color: white;
+    color: $secondary;
 }
   
 .fa-twitter {
     background: #55ACEE;
-    color: white;
+    color: $secondary;
 }
 
 .fa-instagram {
     background: #125688;
-    color: white;
+    color: $secondary;
 }
 
 .fa-youtube {
     background: #bb0000;
-    color: white;
+    color: $secondary;
 }

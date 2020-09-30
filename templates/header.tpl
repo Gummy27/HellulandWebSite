@@ -1,8 +1,6 @@
-<link type="text/css" rel="stylesheet" href="/static/header.css/">
 <article class="header">
     <div>
-        <img src="" alt="Logo" width="50" height="50">
-        <p> Placeholder </p>
+        <a href="{{ url_for('home') }}"><img src="/static/pictures/hellulandLogo.svg" alt="Logo" width="80" height="80"></a>
     </div>
     <div>
         <p><a>/ / /</a></p>

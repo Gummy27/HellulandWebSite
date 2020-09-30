@@ -1,13 +1,15 @@
+@import "var.scss";
+
 body {
     text-align: center;
-    color: white;
+    color: $secondary;
     margin: 0 auto;
 
     font-family: "Arial";
 }
 
 header, main {
-    background-color: #F7524C;
+    background-color: $primary;
 }
 
 main {

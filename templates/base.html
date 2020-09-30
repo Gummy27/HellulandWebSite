@@ -1,12 +1,14 @@
-<link type="text/css" rel="stylesheet" href="/static/main.css/">
-<body>
-    <header>
-        {% include "header.tpl" %}
-    </header>
-    <main>
-        {% block content %}{% endblock %}
-    </main>
-    <footer>
-        {% include "footer.tpl" %}
-    </footer>
-</body>
+{% assets "scss_all" %}
+    <link type="text/css" rel="stylesheet" href="{{ ASSET_URL }}">
+    <body>
+        <header>
+            {% include "header.tpl" %}
+        </header>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <footer>
+            {% include "footer.tpl" %}
+        </footer>
+    </body>
+{% endassets %}

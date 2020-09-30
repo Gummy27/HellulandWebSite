@@ -1,9 +1,14 @@
 from flask import Flask, render_template
+from flask_assets import Environment, Bundle
 
 app = Flask(__name__)
 
-session = {}
- 
+assets = Environment(app)
+assets.url = app.static_url_path
+scss = Bundle('footer.scss', 'header.scss', 'main.scss', 'project.scss', filters='pyscss', output='all.css')
+assets.register('scss_all', scss)
+
+session = {} 
 @app.route("/")
 def home():
     return render_template("home.html")
@@ -24,3 +29,5 @@ def about():
     return render_template("about.html")
 
 app.run(debug=True)
+app.testing = True;
+app.debug = True;
