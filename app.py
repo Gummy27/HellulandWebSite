@@ -28,6 +28,7 @@ def projects():
 def about():
     return render_template("about.html")
 
-app.run(debug=True)
-app.testing = True;
-app.debug = True;
+if __name__ == '__main__':
+    app.run(debug=True)
+    app.testing = True
+    app.debug = True
