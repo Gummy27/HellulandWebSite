@@ -55,6 +55,12 @@ input:focus {
     font-style: normal;
 }
 
+.submitButton {
+    text-align: left;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
 /* Samfélagsmiðla takkar */
 
 .fa {

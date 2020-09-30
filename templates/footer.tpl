@@ -7,14 +7,17 @@
         <div>
             <form class="form">
                 <div class="text_grid">
-                    <input type="text" placeholder="Nafn"></input>
-                    <input type="text" placeholder="Tölvupóstur"></input>
+                    <input type="text" name="Name" placeholder="Nafn"></input>
+                    <input type="text" name="Email" placeholder="Tölvupóstur"></input>
                 </div>
                 <div class="subject">
-                    <input type="text", placeholder="Viðfangsefni"></input>
+                    <input type="text" name="Subject" placeholder="Viðfangsefni"></input>
                 </div>
                 <div class="textarea">
-                    <textarea rows="10" placeholder="Skilaboð"></textarea>
+                    <textarea rows="10" name="Messege" placeholder="Skilaboð"></textarea>
+                </div>
+                <div class="submitButton">
+                    <input type="submit" value="Submit">
                 </div>
             </form>
         </div>
@@ -24,10 +27,10 @@
             <br>
             <p>Hellulandsstræti 1</p>
             <p>101 Reykjavík, Ísland</p>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-youtube"></a>
+            <a href="https://www.facebook.com/hellulandprod " target="_blank" class="fa fa-facebook"></a>
+            <a href="#" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/hellulandprod/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/channel/UCMsGfjwa09aBKHM-N7UWAkw" target="_blank" class="fa fa-youtube"></a>
         </div>
     </div>
 
