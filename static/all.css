@@ -136,6 +136,6 @@ body {
   padding-left: 70px;
   display: grid;
   grid-template-columns: 1fr 2fr; }
-  .project div:nth-child(2) h2, .project div:nth-child(2) h3 {
-    text-align: left;
-    padding-left: 20px; }
+
+  .projectsText {
+    text-align: left; }

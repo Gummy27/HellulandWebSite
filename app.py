@@ -1,5 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 from flask_assets import Environment, Bundle
+import os
 
 app = Flask(__name__)
 
@@ -22,13 +23,18 @@ def home():
 
 @app.route("/projects")
 def projects():
-    return render_template("projects.html")
+    projectsText = []
+    for filename in os.listdir("templates/projectsTpl/"):
+        if filename.split('.')[-1] == 'tpl':
+            projectsText.append(filename.split('.')[0])
+    return render_template("projects.html", projects=projectsText)
 
 @app.route("/about")
 def about():
     return render_template("about.html")
 
 if __name__ == '__main__':
+    os.chdir("/srv/github/")
     app.run(debug=True)
     app.testing = True
     app.debug = True
