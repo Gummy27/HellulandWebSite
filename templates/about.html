@@ -1,7 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-<article>
-    <h1> Um okkur </h1>
+<article class="about">
+    {% for person in personnel %}
+        <div class="about">
+                <img src="static/pictures/{{ person['picture'] }}" width=128.6 height=200>
+                <div>
+                    <p>Nafn: {{ ' '.join([person["firstName"], person["middleName"], person["lastName"]])  }}</p>
+                    <p>Staða: {{ person["position"]}}</p>
+                    <p>Tölvupóstur: {{ person["email"]}}</p>
+                </div>
+        </div>
+    {% endfor %}
 </article>
 {% endblock %} 

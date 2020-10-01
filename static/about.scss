@@ -1,0 +1,15 @@
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    div {
+        padding: 20px;
+        padding-bottom: 30px;
+        display: flex;
+        text-align: left;
+        div {
+            display: block;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}

@@ -1,3 +1,16 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .about div {
+    padding: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    text-align: left; }
+    .about div div {
+      display: block;
+      padding-left: 10px;
+      padding-right: 10px; }
+
 .footer {
   color: #f14e51;
   font-size: 20px; }

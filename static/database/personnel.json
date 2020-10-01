@@ -1,0 +1,32 @@
+[{
+    "firstName" : "Einar",
+    "middleName": "Karl",
+    "lastName"  : "Pétursson",
+    "position"  : "Meðeigandi",
+    "email"     : "swagattack@gmail.com",
+    "picture"   : "einar.jpg"
+},
+{
+    "firstName" : "John",
+    "middleName": null,
+    "lastName"  : "Doe",
+    "position"  : "Ræstingar",
+    "email"     : "johndoe@gmail.com",
+    "picture"   : "john"
+},
+{
+    "firstName" : "Brynjar",
+    "middleName": "Leó",
+    "lastName"  : "Hreiðarsson",
+    "position"  : "Meðeigandi",
+    "email"     : "brynjarleo@gmail.com",
+    "picture"   : "brynjar"
+},
+{
+    "firstName" : "Gabríel",
+    "middleName": null,
+    "lastName"  : "Jónsson",
+    "position"  : "Meðeigandi",
+    "email"     : "gabrieljon@gmail.com",
+    "picture"   : "gabriel"
+}]
