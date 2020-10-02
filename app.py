@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 assets = Environment(app)
 assets.url = app.static_url_path
-scss = Bundle('about.scss', 'footer.scss', 'header.scss', 'main.scss', 'project.scss', filters='pyscss', output='all.css')
+scss = Bundle('home.scss', 'about.scss', 'footer.scss', 'header.scss', 'main.scss', 'project.scss', filters='pyscss', output='all.css')
 assets.register('scss_all', scss)
 
 session = {} 
