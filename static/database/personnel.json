@@ -29,4 +29,12 @@
     "position"  : "Meðeigandi",
     "email"     : "gabrieljon@gmail.com",
     "picture"   : "gabriel"
+},
+{
+    "firstName" : "Camilla",
+    "middleName": "Hjördís",
+    "lastName"  : "Samúelsdóttir",
+    "position"  : "Meðeigandi",
+    "email"     : "camillasam@gmail.com",
+    "picture"   : "camilla"
 }]

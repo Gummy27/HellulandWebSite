@@ -1,29 +1,26 @@
 .titleHome {
-  position: absolute;
   text-align: left;
   padding-bottom: 10px; }
-  .titleHome h3 {
-    margin: 0;
-    padding-left: 5px;
-    font-style: italic; }
-    .titleHome h1 {
-      margin: 0;
-      font-weight: bold;
-      font-size: 3.8em; }
 
-.homeGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-top: 40px; }
-  .homeGrid div {
-    padding-top: 130px;
-    padding-left: 100px;
-    text-align: left;
-    font-size: 18px; }
-    .homeGrid div p {
-      padding-top: 80px; }
-  .homeGrid img {
-    border-radius: 10px; }
+  .homeGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 40px; }
+    .homeGrid div {
+      padding-top: 130px;
+      padding-left: 70px;
+      text-align: left;
+      font-size: 18px; }
+      .homeGrid img {
+        border-radius: 10px; }
+        .homeGrid h3 {
+          margin: 0;
+          padding-left: 5px;
+          font-style: italic; }
+          .homeGrid h1 {
+            margin: 0;
+            font-weight: bold;
+            font-size: 2.8em; }
 
 .home {
   padding-bottom: 50px; }
@@ -60,71 +57,67 @@
     font-size: 30px;
     padding-left: 20px; }
 
-    .footer_grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr; }
+    .form div {
+      padding-bottom: 10px; }
 
-      .form div {
-        padding-bottom: 10px; }
+      .text_grid {
+        display: flex;
+        justify-content: center; }
 
-        .text_grid {
-          display: flex;
-          justify-content: center; }
+        .text_grid input {
+          width: 220px; }
 
-          .text_grid input {
-            width: 220px; }
+          .text_grid input:first-child {
+            margin-right: 20px; }
 
-            .text_grid input:first-child {
-              margin-right: 20px; }
+            .subject input, .textarea textarea {
+              width: 460px; }
 
-              .subject input, .textarea textarea {
-                width: 460px; }
+              input, textarea {
+                background-color: #f14e51;
+                border: 0px;
+                padding: 10px;
+                color: white;
+                font-style: italic;
+                font-size: 14px; }
 
-                input, textarea {
-                  background-color: #f14e51;
-                  border: 0px;
-                  padding: 10px;
+                ::placeholder {
                   color: white;
-                  font-style: italic;
-                  font-size: 14px; }
+                  text-decoration: none; }
 
-                  ::placeholder {
-                    color: white;
-                    text-decoration: none; }
+                  input:focus {
+                    font-style: normal; }
 
-                    input:focus {
-                      font-style: normal; }
+                    .submitButton {
+                      text-align: left;
+                      padding-left: 10px;
+                      text-decoration: none; }
 
-                      .submitButton {
-                        text-align: left;
-                        padding-left: 10px;
+                      .fa {
+                        padding: 20px;
+                        font-size: 30px;
+                        width: 50px;
+                        text-align: center;
                         text-decoration: none; }
 
-                        .fa {
-                          padding: 20px;
-                          font-size: 30px;
-                          width: 50px;
-                          text-align: center;
-                          text-decoration: none; }
+                        .fa:hover {
+                          opacity: 0.7; }
 
-                          .fa:hover {
-                            opacity: 0.7; }
+                          .fa-facebook {
+                            background: #3B5998;
+                            color: white; }
 
-                            .fa-facebook {
-                              background: #3B5998;
+                            .fa-twitter {
+                              background: #55ACEE;
                               color: white; }
 
-                              .fa-twitter {
-                                background: #55ACEE;
+                              .fa-instagram {
+                                background: #125688;
                                 color: white; }
 
-                                .fa-instagram {
-                                  background: #125688;
+                                .fa-youtube {
+                                  background: #bb0000;
                                   color: white; }
-
-                                  .fa-youtube {
-                                    background: #bb0000;
-                                    color: white; }
 
 .header {
   display: grid;
@@ -178,7 +171,7 @@ body {
           max-width: 960px; }
 
           a {
-            color: lightgray;
+            color: white;
             text-decoration: none; }
 
             a:active {

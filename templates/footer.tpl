@@ -4,23 +4,6 @@
     <p class="heading">/// Hafa samband</p>
     <div class="footer_grid">
         <div>
-            <form class="form">
-                <div class="text_grid">
-                    <input type="text" name="Name" placeholder="Nafn"></input>
-                    <input type="text" name="Email" placeholder="Tölvupóstur"></input>
-                </div>
-                <div class="subject">
-                    <input type="text" name="Subject" placeholder="Viðfangsefni"></input>
-                </div>
-                <div class="textarea">
-                    <textarea rows="10" name="Messege" placeholder="Skilaboð"></textarea>
-                </div>
-                <div class="submitButton">
-                    <input type="submit" value="Submit">
-                </div>
-            </form>
-        </div>
-        <div>
             <p>info@hellulandprod.is</p>
             <p>S: 555-555</p>
             <br>

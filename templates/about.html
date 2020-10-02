@@ -4,7 +4,7 @@
 <article class="about">
     {% for person in personnel %}
         <div class="about">
-                <img src="static/pictures/{{ person['picture'] }}" width=128.6 height=200>
+                <img src="static/pictures/personnel/{{ person['picture'] }}" width=128.6 height=200>
                 <div>
                     <p>Nafn: {{ ' '.join([person["firstName"], person["middleName"], person["lastName"]])  }}</p>
                     <p>Staða: {{ person["position"]}}</p>

@@ -1,19 +1,8 @@
 @import "var.scss";
 
 .titleHome {
-    position: absolute;
     text-align: left;
     padding-bottom: 10px;
-    h3 {
-        margin: 0;
-        padding-left: 5px;
-        font-style: italic;
-    }
-    h1 {
-        margin: 0;
-        font-weight: bold;
-        font-size: 3.8em;
-    }
 }
 
 .homeGrid {
@@ -22,15 +11,22 @@
     padding-top: 40px;
     div {
         padding-top: 130px;
-        padding-left: 100px;
+        padding-left: 70px;
         text-align: left;
         font-size: 18px;
-        p {
-            padding-top: 80px;
-        }
     }
     img {
         border-radius: 10px;
+    }
+    h3 {
+        margin: 0;
+        padding-left: 5px;
+        font-style: italic;
+    }
+    h1 {
+        margin: 0;
+        font-weight: bold;
+        font-size: 2.8em;
     }
 }
 

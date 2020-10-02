@@ -25,6 +25,10 @@ def projects():
 
     return render_template("projects.html", projects=projectsText)
 
+@app.route("/projects/<name>")
+def project(name):
+    return render_template("projectsTpl/"+name)
+
 @app.route("/about")
 def about():
     with open("static/database/personnel.json", 'r') as file:
@@ -36,8 +40,10 @@ def about():
 
     return render_template("about.html", personnel=personnel)
 
-if __name__ == '__main__':
-    os.chdir("/srv/github/")
+
+
+if __name__ == 'app':
+    os.chdir("/srv/github/HellulandWebSite/")
     app.run(debug=True)
     app.testing = True
     app.debug = True
