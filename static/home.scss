@@ -1,10 +1,9 @@
 @import "var.scss";
 
 .titleHome {
-    top: 20em;
-    left: 16em;
     position: absolute;
     text-align: left;
+    padding-bottom: 10px;
     h3 {
         margin: 0;
         padding-left: 5px;
@@ -22,10 +21,13 @@
     grid-template-columns: 1fr 1fr;
     padding-top: 40px;
     div {
-        padding-top: 220px;
+        padding-top: 130px;
         padding-left: 100px;
         text-align: left;
         font-size: 18px;
+        p {
+            padding-top: 80px;
+        }
     }
     img {
         border-radius: 10px;
