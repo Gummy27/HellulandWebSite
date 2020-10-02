@@ -29,6 +29,10 @@ def projects():
 def project(name):
     return render_template("projectsTpl/"+name)
 
+@app.route("/Gallery")
+def gallery():
+    return render_template("gallery.html")
+
 @app.route("/about")
 def about():
     with open("static/database/personnel.json", 'r') as file:
@@ -39,8 +43,6 @@ def about():
             x["middleName"] = ""
 
     return render_template("about.html", personnel=personnel)
-
-
 
 if __name__ == 'app':
     os.chdir("/srv/github/HellulandWebSite/")

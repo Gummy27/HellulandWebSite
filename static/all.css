@@ -119,35 +119,38 @@
                                   background: #bb0000;
                                   color: white; }
 
-.header {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  font-size: 24px; }
+.headerBackground {
+  background-color: #f14e51; }
 
-  .header div {
-    display: flex; }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    font-size: 24px; }
 
-    .header div img {
-      padding-right: 10px; }
+    .header div {
+      display: flex; }
 
-      .header div:first-child {
-        text-align: left; }
+      .header div img {
+        padding-right: 10px; }
 
-        .header div:last-child {
-          justify-content: right; }
+        .header div:first-child {
+          text-align: left; }
 
-          .header div:last-child p {
-            padding-left: 25px;
-            padding-right: 25px; }
+          .header div:last-child {
+            justify-content: right; }
 
-            .header div:last-child p:first-child {
-              padding-right: 20px; }
+            .header div:last-child p {
+              padding-left: 25px;
+              padding-right: 25px; }
 
-              .header div:last-child p:first-child a:hover {
-                text-decoration: none; }
+              .header div:last-child p:first-child {
+                padding-right: 20px; }
 
-                .current {
-                  text-decoration: underline; }
+                .header div:last-child p:first-child a:hover {
+                  text-decoration: none; }
+
+                  .current {
+                    text-decoration: underline; }
 
 body {
   text-align: center;

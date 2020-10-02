@@ -1,5 +1,9 @@
 @import "var.scss";
 
+.headerBackground{
+    background-color: $primary;
+}
+
 .header {
     display: grid;
     grid-template-columns: 1fr 3fr;

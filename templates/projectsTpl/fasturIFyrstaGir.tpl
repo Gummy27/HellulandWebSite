@@ -1,4 +1,4 @@
-<h2>Fastur í fyrsta gír</h2>
+<h2>Fastir í fyrsta gír</h2>
 <p class="projectText">
     "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium 
     voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati 
