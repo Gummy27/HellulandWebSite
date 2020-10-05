@@ -3,6 +3,16 @@
 {% block content %}
 <article>
     <h1> Verkefni </h1>
-    {% include "project.tpl" %}
+    <main class="project">
+        {% for project in projects %}
+            <div>
+                <img src="/static/pictures/shortMovies/{{project}}.jpg", width=200, height=300> 
+            </div>
+            <div class="projectsText">
+                {% include "/projects/"+media+"/"+project+".tpl" %}
+                <a href="/projects/{{ project }}.html"><h3>Nánar</h3></a>
+            </div>
+        {% endfor %}
+    </main>
 </article>
 {% endblock %} 

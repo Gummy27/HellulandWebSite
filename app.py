@@ -15,15 +15,15 @@ session = {}
 def home():
     return render_template("home.html")
 
-@app.route("/projects")
-def projects():
+@app.route("/projects/<media>")
+def projects(media):
 
     projectsText = []
-    for filename in os.listdir("templates/projectsTpl/"):
+    for filename in os.listdir("templates/projects/"+media):
         if filename.split('.')[-1] == 'tpl':
             projectsText.append(filename.split('.')[0])
 
-    return render_template("projects.html", projects=projectsText)
+    return render_template("projects.html", projects=projectsText, media=media)
 
 @app.route("/projects/<name>")
 def project(name):
