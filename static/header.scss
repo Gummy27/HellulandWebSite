@@ -1,7 +1,7 @@
 @import "var.scss";
 
 .headerBackground{
-    background-color: $primary;
+    background-color: $third;
 }
 
 .header {
@@ -42,4 +42,12 @@
 
 .current {
     text-decoration: underline;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logoText {
+    padding-top: 20px;
 }

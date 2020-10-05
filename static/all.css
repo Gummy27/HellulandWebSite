@@ -120,7 +120,7 @@
                                   color: white; }
 
 .headerBackground {
-  background-color: #f14e51; }
+  background-color: #8bcfb6; }
 
   .header {
     display: grid;
@@ -151,6 +151,12 @@
 
                   .current {
                     text-decoration: underline; }
+
+                    .logo {
+                      display: inline-block; }
+
+                      .logoText {
+                        padding-top: 20px; }
 
 body {
   text-align: center;

@@ -44,7 +44,7 @@ def about():
 
     return render_template("about.html", personnel=personnel)
 
-if __name__ == '__main__':
+if __name__ == 'app':
     os.chdir("/srv/github/HellulandWebSite/")
     app.run(debug=True)
     app.testing = True

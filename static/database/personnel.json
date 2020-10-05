@@ -7,20 +7,12 @@
     "picture"   : "einar.jpg"
 },
 {
-    "firstName" : "John",
-    "middleName": null,
-    "lastName"  : "Doe",
-    "position"  : "Ræstingar",
-    "email"     : "johndoe@gmail.com",
-    "picture"   : "john"
-},
-{
     "firstName" : "Brynjar",
     "middleName": "Leó",
     "lastName"  : "Hreiðarsson",
     "position"  : "Meðeigandi",
     "email"     : "brynjarleo@gmail.com",
-    "picture"   : "brynjar"
+    "picture"   : "brynjar.jpg"
 },
 {
     "firstName" : "Gabríel",
@@ -28,7 +20,7 @@
     "lastName"  : "Jónsson",
     "position"  : "Meðeigandi",
     "email"     : "gabrieljon@gmail.com",
-    "picture"   : "gabriel"
+    "picture"   : "gabriel.jpg"
 },
 {
     "firstName" : "Camilla",
@@ -36,5 +28,13 @@
     "lastName"  : "Samúelsdóttir",
     "position"  : "Meðeigandi",
     "email"     : "camillasam@gmail.com",
-    "picture"   : "camilla"
+    "picture"   : "camilla.jpg"
+},
+{
+    "firstName" : "John",
+    "middleName": null,
+    "lastName"  : "Doe",
+    "position"  : "Ræstingar",
+    "email"     : "johndoe@gmail.com",
+    "picture"   : "john"
 }]

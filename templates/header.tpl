@@ -1,6 +1,7 @@
 <article class="header">
-    <div>
-        <a href="{{ url_for('home') }}"><img src="/static/pictures/hellulandLogo.svg" alt="Logo" width="80" height="80"></a>
+    <div class="logo">
+        <a href="{{ url_for('home') }}"><img src="/static/pictures/HL_Whole.png" alt="Logo" width="70" height="70"></a>
+        <a class="logoText" href="{{ url_for('home') }}"><img src="/static/pictures/texti_PR_shade.png" alt="Logo" width="140" height=auto></a>
     </div>
     <div>
         <p><a>/ / /</a></p>
