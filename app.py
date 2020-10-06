@@ -35,7 +35,7 @@ def gallery():
 
 @app.route("/about")
 def about():
-    with open("static/database/personnel.json", 'r') as file:
+    with open("static/database/personnel.json", 'r', encoding="utf-8") as file:
         personnel = json.load(file)
 
     for x in personnel:
@@ -45,7 +45,10 @@ def about():
     return render_template("about.html", personnel=personnel)
 
 if __name__ == 'app':
-    os.chdir("/srv/github/HellulandWebSite/")
-    app.run(debug=True)
-    app.testing = True
-    app.debug = True
+    try:
+        os.chdir("/srv/github/HellulandWebSite/")
+    except:
+        try:
+            os.chdir("Desktop/Projects/HellulandWebSite/")
+        except:
+            pass

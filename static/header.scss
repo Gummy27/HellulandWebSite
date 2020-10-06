@@ -9,35 +9,9 @@
     grid-template-columns: 1fr 3fr;
 
     font-size: 24px;
-}
-
-.header div {
-    display: flex;
-}
-
-.header div img {
-    padding-right: 10px;
-}
-
-.header div:first-child {
-    text-align: left;
-}
-
-.header div:last-child {
-    justify-content: right;
-}
-
-.header div:last-child p {
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-.header div:last-child p:first-child {
-    padding-right: 20px;
-}
-
-.header div:last-child p:first-child a:hover {
-    text-decoration: none;
+    div:first-child {
+        display: flex;
+    }
 }
 
 .current {
@@ -45,9 +19,50 @@
 }
 
 .logo {
+    text-align: left;
     display: inline-block;
+    a img {
+        padding-right: 10px;
+    }
 }
 
 .logoText {
     padding-top: 20px;
+}
+
+.valmynd {
+    display: block;
+}
+
+.mainValmynd {
+    display: flex;
+    padding-top: 20px;
+    justify-content: right;
+    a {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    text-align: right;
+    padding-top: 10px;
+    right: 15.8em;
+    a {
+        font-size: 18px;
+        padding-right: 20px;
+        display: flex;
+    }
+}
+
+.dropdownActivate:hover .dropdown {
+    display: flex;
+    margin-left: 10px;
+}
+
+.dropdownActivate:hover {
+    color: red;
 }
