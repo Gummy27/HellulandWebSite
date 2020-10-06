@@ -8,12 +8,12 @@
             <a>/ / /</a>
             <a class="interface" href="{{ url_for('home') }}">Helluland</a>
             <div class="dropdownActivate">
-                <aclass="interface" href="{{ url_for('projects', media='shortMovies') }}">Verkefni</a>
+                <a id="dropdownParent" class="interface" href="{{ url_for('projects', media='shortMovies') }}">Verkefni</a>
                     <nav id="dropdown" class="dropdown">
-                        <a>Stuttmyndir</a>
-                        <a>Tónlist</a>
-                        <a>Hlaðvörp</a>
-                        <a>Væntanlegt</a>
+                        <a class="interface dropdownLinks" href="{{ url_for('projects', media='shortMovies') }}">Stuttmyndir</a>
+                        <a class="interface dropdownLinks" href="{{ url_for('projects', media='music') }}">Tónlist</a>
+                        <a class="interface dropdownLinks" href="{{ url_for('projects', media='podcasts') }}">Hlaðvörp</a>
+                        <a class="interface dropdownLinks" href="{{ url_for('projects', media='comingSoon') }}">Væntanlegt</a>
                     </nav>
                     <script src="/static/scripts/dynamicDropDown.js">resizeDropDown();</script>
             </div>
