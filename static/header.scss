@@ -44,6 +44,10 @@
     }
 }
 
+.seperator:active {
+    text-decoration: none;
+}
+
 .dropdown {
     position: absolute;
     display: none;

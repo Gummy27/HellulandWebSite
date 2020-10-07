@@ -2,7 +2,7 @@
 
 {% block content %}
 <article>
-    <h1> Verkefni </h1>
+    <h1> {{ displayMedia }} </h1>
     <main class="project">
         {% for project in projects %}
             <div>
@@ -10,7 +10,7 @@
             </div>
             <div class="projectsText">
                 {% include "/projects/"+media+"/"+project+".tpl" %}
-                <a href="{{ url_for('project', media='shortMovies', name=project) }}"><h3>Nánar</h3></a>
+                <a href="{{ url_for('project', media=media, name=project) }}"><h3>Nánar</h3></a>
             </div>
         {% endfor %}
     </main>

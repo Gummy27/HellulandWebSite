@@ -15,22 +15,30 @@ session = {}
 def home():
     return render_template("home.html")
 
+# Í þessum beini koma fram öll verkefni í ákveðnum miðli s.s. stuttmyndir
 @app.route("/projects/<media>")
 def projects(media):
-
     projectsText = []
     for filename in os.listdir("templates/projects/"+media):
         if filename.split('.')[-1] == 'tpl':
             projectsText.append(filename.split('.')[0])
 
-    return render_template("projects.html", projects=projectsText, media=media)
+    mediaTranslation = {
+        "shortMovies": "Stuttmyndir",
+        "music": "Tónlist",
+        "podcasts": "Hlaðvörp",
+        "comingSoon": "Væntanlegt"}
 
+    return render_template("projects.html", projects=projectsText, media=media, displayMedia=mediaTranslation[media])
+
+# Aðgengi að þessum beini er í gegnum projects. Þarna fær heilt verkefni eina síðu útaf fyrir sig
 @app.route("/projects/<media>/<name>")
 def project(media, name):
     return render_template(f"projects/{media}/{name}.html")
 
 @app.route("/Gallery")
 def gallery():
+    
     return render_template("gallery.html")
 
 @app.route("/about")
@@ -43,6 +51,10 @@ def about():
             x["middleName"] = ""
 
     return render_template("about.html", personnel=personnel)
+
+@app.errorhandler(404)
+def error(error):
+	return render_template("error404.html")
 
 if __name__ == 'app':
     try:

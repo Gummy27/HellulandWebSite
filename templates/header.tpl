@@ -5,7 +5,7 @@
     </div>
     <div class="valmynd">
         <nav class="mainValmynd">
-            <a>/ / /</a>
+            <a class="seperator">/ / /</a>
             <a class="interface" href="{{ url_for('home') }}">Helluland</a>
             <div class="dropdownActivate">
                 <a id="dropdownParent" class="interface" href="{{ url_for('projects', media='shortMovies') }}">Verkefni</a>
