@@ -25,9 +25,9 @@ def projects(media):
 
     return render_template("projects.html", projects=projectsText, media=media)
 
-@app.route("/projects/<name>")
-def project(name):
-    return render_template("projectsTpl/"+name)
+@app.route("/projects/<media>/<name>")
+def project(media, name):
+    return render_template(f"projects/{media}/{name}.html")
 
 @app.route("/Gallery")
 def gallery():

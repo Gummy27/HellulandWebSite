@@ -31,10 +31,10 @@
     "picture"   : "camilla.jpg"
 },
 {
-    "firstName" : "John",
+    "firstName" : "Úlfur",
     "middleName": null,
-    "lastName"  : "Doe",
+    "lastName"  : "Arnalds",
     "position"  : "Ræstingar",
-    "email"     : "johndoe@gmail.com",
-    "picture"   : "john"
+    "email"     : "ulfura@gmail.com",
+    "picture"   : "ulfur.jpg"
 }]
