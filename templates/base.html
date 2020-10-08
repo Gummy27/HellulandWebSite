@@ -4,17 +4,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Helluland Prod</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ ASSET_URL }}">
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/all.css">
 </head>
     <body>
+        <h1>{{ ASSETS_URL }}</h1>
         <header class="headerBackground">
-            {% include "header.tpl" %}
+            {% include "header.html" %}
         </header>
         <main>
             {% block content %}{% endblock %}
         </main>
         <footer>
-            {% include "footer.tpl" %}
+            {% include "footer.html" %}
         </footer>
     </body>
 {% endassets %}

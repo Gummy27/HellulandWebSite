@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article>
+    <div>
+        {% include "projects/"+media+"/"+name+".html"%}
+    </div>
+</article>
+{% endblock %}

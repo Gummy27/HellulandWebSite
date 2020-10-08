@@ -4,11 +4,11 @@ import os
 import json
 
 app = Flask(__name__)
-
 assets = Environment(app)
-assets.url = app.static_url_path+'/scss'
-print(assets.url)
-scss = Bundle('scss/home.scss', 'scss/about.scss', 'scss/footer.scss', 'scss/header.scss', 'scss/main.scss', 'scss/project.scss', filters='pyscss', output='all.css')
+
+assets.append_path('static/scss')
+
+scss = Bundle('home.scss', 'about.scss', 'footer.scss', 'header.scss', 'main.scss', 'project.scss', filters='pyscss', output='all.css')
 assets.register('scss_all', scss)
 
 session = {} 
@@ -35,7 +35,7 @@ def projects(media):
 # Aðgengi að þessum beini er í gegnum projects. Þarna fær heilt verkefni eina síðu útaf fyrir sig
 @app.route("/projects/<media>/<name>")
 def project(media, name):
-    return render_template(f"projects/{media}/{name}.html")
+    return render_template("project.html", media=media, name=name)
 
 @app.route("/Gallery")
 def gallery():

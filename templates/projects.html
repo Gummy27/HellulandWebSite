@@ -9,10 +9,11 @@
                 <img src="/static/pictures/shortMovies/{{project}}.jpg", width=200, height=300> 
             </div>
             <div class="projectsText">
-                {% include "/projects/"+media+"/"+project+".tpl" %}
+                {% include "/projects/"+media+"/"+project+".html" %}
                 <a href="{{ url_for('project', media=media, name=project) }}"><h3>Nánar</h3></a>
             </div>
         {% endfor %}
+        <script src="/static/scripts/paragraph.js"></script>
     </main>
 </article>
 {% endblock %} 
