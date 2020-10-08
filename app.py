@@ -6,8 +6,9 @@ import json
 app = Flask(__name__)
 
 assets = Environment(app)
-assets.url = app.static_url_path
-scss = Bundle('home.scss', 'about.scss', 'footer.scss', 'header.scss', 'main.scss', 'project.scss', filters='pyscss', output='all.css')
+assets.url = app.static_url_path+'/scss'
+print(assets.url)
+scss = Bundle('scss/home.scss', 'scss/about.scss', 'scss/footer.scss', 'scss/header.scss', 'scss/main.scss', 'scss/project.scss', filters='pyscss', output='all.css')
 assets.register('scss_all', scss)
 
 session = {} 
