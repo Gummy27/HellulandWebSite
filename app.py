@@ -28,7 +28,8 @@ def projects(media):
         "shortMovies": "Stuttmyndir",
         "music": "Tónlist",
         "podcasts": "Hlaðvörp",
-        "comingSoon": "Væntanlegt"}
+        "comingSoon": "Væntanlegt"
+    }
 
     return render_template("projects.html", projects=projectsText, media=media, displayMedia=mediaTranslation[media])
 

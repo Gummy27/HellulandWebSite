@@ -44,3 +44,25 @@
     color: $primary;
     border-radius: 5px;
 }
+
+.slideInSlideshow {
+    position: absolute;
+    width: 960px;
+    height: auto;
+    z-index: 0;
+}
+
+.slideshow-button {
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+}
+
+$positioning_button: 480px;
+.button-right {
+    margin-left: $positioning_button;
+}
+
+.button-left {
+    margin-right: $positioning_button;
+}

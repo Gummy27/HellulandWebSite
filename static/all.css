@@ -35,6 +35,23 @@
     color: #f14e51;
     border-radius: 5px; }
 
+    .slideInSlideshow {
+      position: absolute;
+      width: 960px;
+      height: auto;
+      z-index: 0; }
+
+      .slideshow-button {
+        position: absolute;
+        z-index: 1;
+        padding: 10px; }
+
+        .button-right {
+          margin-left: 480px; }
+
+          .button-left {
+            margin-right: 480px; }
+
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr; }
@@ -151,20 +168,21 @@
       .mainValmynd a {
         padding-left: 25px;
         padding-right: 25px; }
+        .mainValmynd a:hover {
+          color: #7d3982; }
+          .mainValmynd p {
+            margin: 0;
+            padding-right: 25px; }
 
-.seperator:active {
-  text-decoration: none; }
-
-  .dropdown {
-    position: absolute;
-    display: none;
-    justify-content: center;
-    text-align: right;
-    padding-top: 10px; }
-    .dropdown a {
-      font-size: 18px;
-      padding-right: 20px;
-      display: flex; }
+.dropdown {
+  position: absolute;
+  display: none;
+  justify-content: center;
+  text-align: right;
+  padding-top: 10px; }
+  .dropdown a {
+    font-size: 18px;
+    padding-right: 20px; }
 
 .dropdownActivate:hover .dropdown {
   display: flex;
@@ -183,7 +201,7 @@ body {
     background-color: #f14e51; }
 
     main {
-      min-height: 35em; }
+      min-height: 1200px; }
 
       header, footer {
         padding-top: 10px;

@@ -5,7 +5,7 @@ body {
     color: $secondary;
     margin: 0 auto;
 
-    font-family: "Arial";
+    font-family: $font;
 }
 
 header, main {
@@ -13,7 +13,7 @@ header, main {
 }
 
 main {
-    min-height: 35em;
+    min-height: 1200px;
 }
 
 header, footer {

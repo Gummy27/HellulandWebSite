@@ -2,7 +2,7 @@
 
 {% block content %}
 <article class="home">
-    <section class="homeGrid">
+    <section class="homeGrid" style="display: none;">
         <div>
             <h3>/ / / Nýjasta verkefnið</h3>
             <h1> GLEÐIPAKKINN </h1>
@@ -17,6 +17,29 @@
         </div>
         <a href="/projects/shortMovies/glethiPakkinn"><img src="/static/pictures/shortMovies/glethiPakkinn.jpg" width=400 height=600></a>
     </section>
-    <!--<a class="moreHome">/// Meira</a>-->
+    <section>
+        <div class="slideInSlideshow" style="display: none;">
+            <img src="/static/pictures/sdbhaj.png" placeholder="Mynd 1" width="100%">
+            <p>Mynd 1</p>
+        </div>
+        <div class="slideInSlideshow" style="display: none;">
+            <img src="/static/pictures/sdbhaj.png" placeholder="Mynd 2" width="100%">
+            <p>Mynd 2</p>
+        </div>
+        <div class="slideInSlideshow" style="display: none;">
+            <img src="/static/pictures/sdbhaj.png" placeholder="Mynd 3" width="100%">
+            <p>Mynd 3</p>
+        </div>
+        <button class="slideshow-button button-right" 
+            onclick="showNextPrevSlide(1)">
+            <span>></span>
+        </button>
+        <button class="slideshow-button button-left"
+            onclick="showNextPrevSlide(-1)">
+            <span><</span>
+        </button>
+
+        <script src="/static/scripts/slideshow.js">slides[0].style.display = "block";</script>
+    </section>
 </article>
 {% endblock %} 
