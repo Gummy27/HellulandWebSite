@@ -4,11 +4,10 @@ console.log(document.URL)
 for(let i = 0; i < interface.length; i++) {
     if(document.URL == interface[i].href){
         if(interface[i].className == "interface dropdownLinks") {
-            document.getElementById("dropdownParent").className = "interface current";
-            console.log(interface[i].textContent)
-            console.log("Yes");
+            document.getElementById("dropdownParent").className = "mainLinks interface current";
+            interface[i].className = "interface dropdownLinks current";
         } else {
-            interface[i].className = "interface current";
+            interface[i].className = "mainLinks interface current";
         }
     }
 }

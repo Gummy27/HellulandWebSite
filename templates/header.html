@@ -6,9 +6,9 @@
                 <a class="logoText" href="{{ url_for('home') }}"><img src="/static/pictures/texti_PR_shade.png" alt="Logo" width="140" height=auto></a>
             </div>
             <!--<p class="seperator">/ / /</p>-->
-            <a class="interface" href="{{ url_for('home') }}">Helluland</a>
-            <div class="dropdownActivate interface">
-                <a id="dropdownParent" class="interface" href="{{ url_for('projects', media='shortMovies') }}">Verkefni</a>
+            <a class="mainLinks interface" href="{{ url_for('home') }}">Helluland</a>
+            <div class="dropdownActivate">
+                <a id="dropdownParent" class="mainLinks interface" href="{{ url_for('projects', media='shortMovies') }}">Verkefni</a>
                     <nav id="dropdown" class="dropdown">
                         <a class="interface dropdownLinks" href="{{ url_for('projects', media='shortMovies') }}">Stuttmyndir</a>
                         <a class="interface dropdownLinks" href="{{ url_for('projects', media='music') }}">Tónlist</a>
@@ -17,8 +17,8 @@
                     </nav>
                     <script src="/static/scripts/dynamicDropDown.js">resizeDropDown();</script>
             </div>
-            <a class="interface" href="{{ url_for('gallery') }}">Gallery</a>
-            <a class="interface" href="{{ url_for('about') }}">Um okkur</a>
+            <a class="mainLinks interface" href="{{ url_for('gallery') }}">Gallery</a>
+            <a class="mainLinks interface" href="{{ url_for('about') }}">Um okkur</a>
             <script src="/static/scripts/viewing.js"></script>
         </nav>
     </div>
