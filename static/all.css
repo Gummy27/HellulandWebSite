@@ -140,55 +140,58 @@
   background-color: #8bcfb6; }
 
   .header {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    font-size: 24px; }
-    .header div:first-child {
-      display: flex; }
+    padding: 0; }
 
-.current {
-  text-decoration: underline; }
+    .current {
+      text-decoration: underline; }
 
-  .logo {
-    text-align: left;
-    display: inline-block; }
-    .logo a img {
-      padding-right: 10px; }
+      .logo {
+        text-align: left;
+        display: inline-block;
+        background-color: #8bcfb6; }
+        .logo a img {
+          padding-right: 10px;
+          background-color: #8bcfb6; }
 
 .logoText {
   padding-top: 20px; }
 
   .valmynd {
-    display: block; }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+    .valmynd a {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      justify-content: center;
+      font-size: 1.5em;
+      text-align: center; }
 
-    .mainValmynd {
-      display: flex;
-      padding-top: 20px;
-      justify-content: right; }
-      .mainValmynd a {
-        padding-left: 25px;
-        padding-right: 40px; }
-        .mainValmynd a:hover {
-          color: #7d3982; }
-          .mainValmynd p {
-            margin: 0;
-            padding-right: 25px; }
+.dropdownActivate {
+  padding-top: 30px; }
 
-.dropdown {
-  position: absolute;
-  display: none;
-  justify-content: center;
-  text-align: right;
-  padding-top: 10px; }
-  .dropdown a {
-    font-size: 18px;
-    padding-right: 20px; }
+  .interface:nth-child(odd) {
+    background-color: #8bcfb6; }
+
+    .interface:nth-child(even) {
+      background-color: #7d3982; }
+
+      .dropdown {
+        position: absolute;
+        display: none;
+        justify-content: center;
+        text-align: right;
+        padding-top: 40px; }
+        .dropdown a {
+          font-size: 18px;
+          padding-right: 20px;
+          padding-top: 40px; }
 
 .dropdownActivate:hover .dropdown {
   display: flex;
   margin-left: 10px; }
 
   .dropdownActivate:hover {
+    padding-bottom: 40px;
     color: red; }
 
 body {
@@ -203,7 +206,7 @@ body {
     main {
       min-height: 1200px; }
 
-      header, footer {
+      footer {
         padding-top: 10px;
         padding-bottom: 10px; }
 

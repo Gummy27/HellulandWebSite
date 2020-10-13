@@ -1,13 +1,13 @@
 <article class="header">
-    <div class="logo">
-        <a href="{{ url_for('home') }}"><img src="/static/pictures/HL_Whole.png" alt="Logo" width="70" height="70"></a>
-        <a class="logoText" href="{{ url_for('home') }}"><img src="/static/pictures/texti_PR_shade.png" alt="Logo" width="140" height=auto></a>
-    </div>
-    <div class="valmynd">
-        <nav class="mainValmynd">
-            <p class="seperator">/ / /</p>
+    <div class="">
+        <nav class="valmynd">
+            <div class="logo">
+                <a href="{{ url_for('home') }}"><img src="/static/pictures/HL_Whole.png" alt="Logo" width="70" height="70"></a>
+                <a class="logoText" href="{{ url_for('home') }}"><img src="/static/pictures/texti_PR_shade.png" alt="Logo" width="140" height=auto></a>
+            </div>
+            <!--<p class="seperator">/ / /</p>-->
             <a class="interface" href="{{ url_for('home') }}">Helluland</a>
-            <div class="dropdownActivate">
+            <div class="dropdownActivate interface">
                 <a id="dropdownParent" class="interface" href="{{ url_for('projects', media='shortMovies') }}">Verkefni</a>
                     <nav id="dropdown" class="dropdown">
                         <a class="interface dropdownLinks" href="{{ url_for('projects', media='shortMovies') }}">Stuttmyndir</a>

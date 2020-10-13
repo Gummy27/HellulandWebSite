@@ -2,6 +2,7 @@
 
 .headerBackground{ background-color: $third; }
 
+/*
 .header {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -9,19 +10,51 @@
     font-size: 24px;
     div:first-child { display: flex; }
 }
+*/
+
+.header {
+    padding: 0;
+}
 
 .current { text-decoration: underline; }
 
 .logo {
     text-align: left;
     display: inline-block;
-    a img { padding-right: 10px; }
+    background-color: $third;
+    a img { 
+        padding-right: 10px; 
+        background-color: $third;
+    }
 }
 
 .logoText { padding-top: 20px; }
 
-.valmynd { display: block; }
+.valmynd { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    a {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        justify-content: center;
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
 
+.dropdownActivate {
+    padding-top: 30px;
+}
+
+.interface:nth-child(odd) {
+    background-color: $third;
+}
+
+.interface:nth-child(even) {
+    background-color: $fourth;
+}
+
+/*
 .mainValmynd {
     display: flex;
     padding-top: 20px;
@@ -38,17 +71,18 @@
         padding-right: 25px;
     }
 }
+*/
 
 .dropdown {
     position: absolute;
     display: none;
     justify-content: center;
     text-align: right;
-    padding-top: 10px;
-
+    padding-top: 40px;
     a {
         font-size: 18px;
         padding-right: 20px;
+        padding-top: 40px;
     }
 }
 
@@ -57,4 +91,7 @@
     margin-left: 10px;
 }
 
-.dropdownActivate:hover { color: red; }
+.dropdownActivate:hover { 
+    padding-bottom: 40px;
+    color: red; 
+}
