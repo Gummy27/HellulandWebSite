@@ -1,7 +1,7 @@
 <article class="header">
     <div class="">
         <nav class="valmynd">
-            <div class="logo">
+            <div id="logo">
                 <a href="{{ url_for('home') }}"><img src="/static/pictures/HL_Whole.png" alt="Logo" width="70" height="70"></a>
                 <a class="logoText" href="{{ url_for('home') }}"><img src="/static/pictures/texti_PR_shade.png" alt="Logo" width="140" height=auto></a>
             </div>
@@ -15,10 +15,10 @@
                         <a class="interface dropdownLinks" href="{{ url_for('projects', media='podcasts') }}">Hlaðvörp</a>
                         <a class="interface dropdownLinks" href="{{ url_for('projects', media='comingSoon') }}">Væntanlegt</a>
                     </nav>
-                    <script src="/static/scripts/dynamicDropDown.js">resizeDropDown();</script>
             </div>
             <a class="mainLinks interface" href="{{ url_for('gallery') }}">Gallery</a>
             <a class="mainLinks interface" href="{{ url_for('about') }}">Um okkur</a>
+            <script src="/static/scripts/dynamicDropDown.js">resizeDropDown();</script>
             <script src="/static/scripts/viewing.js"></script>
         </nav>
     </div>

@@ -1,20 +1,17 @@
+let dropDown = document.getElementById("dropdown");
+let links = dropDown.querySelectorAll('a');
+let windowsWidth = document.querySelector("header");
+
+let maxWidth = 0;
+
 function resizeDropDown() {
-    dropDown = document.getElementById("dropdown");
-    links = dropDown.querySelectorAll('a');
-
-    let dropDownRight = document.querySelector("header").offsetWidth;
-    dropDownRight = (dropDownRight - dropDownRight*0.9) / 2;
-
+    dropDownRight = (windowsWidth.offsetWidth - windowsWidth.offsetWidth*0.9) / 2;
     dropDown.style.right = dropDownRight;
-    console.log(dropDownRight)
+    console.log(windowsWidth.offsetWidth, dropDownRight)
 
-    maxWidth = 342.533;
-    padding = String((maxWidth-100)/2-0.1)+'px';
-
-    // dropDown.style.left = dropDownRight-43;
+    maxWidth = document.getElementById("logo").offsetWidth;
     for(let i = 0; i < links.length; i++) {
-        links[i].style.paddingRight = padding;
-        links[i].style.paddingLeft = padding;
+        links[i].style.width = maxWidth;
     }
 }
 
