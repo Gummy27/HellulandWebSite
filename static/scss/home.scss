@@ -57,12 +57,3 @@
     z-index: 1;
     padding: 10px;
 }
-
-$positioning_button: 480px;
-.button-right {
-    margin-left: $positioning_button;
-}
-
-.button-left {
-    margin-right: $positioning_button;
-}

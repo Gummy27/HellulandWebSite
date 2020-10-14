@@ -46,12 +46,6 @@
         z-index: 1;
         padding: 10px; }
 
-        .button-right {
-          margin-left: 480px; }
-
-          .button-left {
-            margin-right: 480px; }
-
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr; }
@@ -183,7 +177,7 @@
 
           .dropdown {
             position: absolute;
-            display: flex;
+            display: none;
             justify-content: right;
             text-align: right;
             padding-top: 20px;
@@ -196,8 +190,8 @@
 .dropdownActivate:hover .dropdown {
   display: flex; }
 
-  .dropdownActivate {
-    padding-bottom: 70px;
+  .dropdownActivate:hover {
+    padding-bottom: 50px;
     color: red; }
 
 body {

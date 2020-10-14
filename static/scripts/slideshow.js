@@ -1,20 +1,29 @@
 let slides = document.getElementsByClassName("slideInSlideshow");
-let index = 0;
+let pictureIndex = 0;
+slides[pictureIndex].style.display = "block";
 
-slides[index].style.display = "block";
 function showNextPrevSlide(action) {
-    if(index+action < slides.length && index+action >= 0) {
-        slides[index].style.display = "none";
-        index = index + action;
-        slides[index].style.display = "block";
+    if(pictureIndex+action < slides.length && pictureIndex+action >= 0) {
+        slides[pictureIndex].style.display = "none";
+        pictureIndex = pictureIndex + action;
+        slides[pictureIndex].style.display = "block";
     }
 }
 
-function resizeDropDown() {
-    let width = (window.innerWidth - 960) / 2;
-    document.getElementsByClassName("button-right").style.width = width;
+function resizeButtons() {
+    let windowsWidth = document.querySelector("header");
 
-    dropDown.style.right = width+35;
+    let marginWindow = (windowsWidth.offsetWidth - windowsWidth.offsetWidth*0.9) / 2;
+
+    document.getElementById("button-right").style.right = marginWindow;
+    document.getElementById("button-left").style.left = marginWindow;
+
+
+    let buttonHeight = slides[pictureIndex].querySelector("img").offsetHeight / 2 - 10;
+    console.log(buttonHeight);
+    document.getElementById("button-right").style.marginTop = buttonHeight;
+    document.getElementById("button-left").style.marginTop = buttonHeight;
+    
 }
 
 resizeButtons();
