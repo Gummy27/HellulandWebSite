@@ -14,7 +14,11 @@ assets.register('scss_all', scss)
 session = {} 
 @app.route("/")
 def home():
-    return render_template("home.html")
+    slideshowPics = []
+    for filename in os.listdir("static/pictures/slideShow"):
+        slideshowPics.append(f"/static/pictures/slideShow/{filename}")
+
+    return render_template("home.html", slideshowPics=slideshowPics)
 
 # Í þessum beini koma fram öll verkefni í ákveðnum miðli s.s. stuttmyndir
 @app.route("/projects/<media>")

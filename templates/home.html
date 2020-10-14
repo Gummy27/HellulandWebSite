@@ -18,18 +18,11 @@
         <a href="/projects/shortMovies/glethiPakkinn"><img src="/static/pictures/shortMovies/glethiPakkinn.jpg" width=400 height=600></a>
     </section>
     <section>
+        {% for picture in slideshowPics %}
         <div class="slideInSlideshow" style="display: none;">
-            <img src="/static/pictures/sdbhaj.png" placeholder="Mynd 1" width="100%" height="600px">
-            <p>Mynd 1</p>
+            <img src="{{ picture }}" width=100% height=100%>
         </div>
-        <div class="slideInSlideshow" style="display: none;">
-            <img src="/static/pictures/sdbhaj.png" placeholder="Mynd 2" width="100%" height="600px">
-            <p>Mynd 2</p>
-        </div>
-        <div class="slideInSlideshow" style="display: none;">
-            <img src="/static/pictures/sdbhaj.png" placeholder="Mynd 3" width="100%" height="600px">
-            <p>Mynd 3</p>
-        </div>
+        {% endfor %}
         <button id="button-right" class="slideshow-button" 
             onclick="showNextPrevSlide(1)">
             <span>></span>
@@ -38,8 +31,7 @@
             onclick="showNextPrevSlide(-1)">
             <span><</span>
         </button>
-
-        <script src="/static/scripts/slideshow.js">slides[0].style.display = "block";</script>
+        <script src="/static/scripts/slideshow.js">console.log(slides[pictureIndex].querySelector("img").height);</script>
     </section>
 </article>
 {% endblock %} 

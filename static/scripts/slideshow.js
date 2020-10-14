@@ -1,6 +1,7 @@
 let slides = document.getElementsByClassName("slideInSlideshow");
 let pictureIndex = 0;
 slides[pictureIndex].style.display = "block";
+slides[0].style.display = "block";
 
 function showNextPrevSlide(action) {
     if(pictureIndex+action < slides.length && pictureIndex+action >= 0) {
@@ -18,13 +19,12 @@ function resizeButtons() {
     document.getElementById("button-right").style.right = marginWindow;
     document.getElementById("button-left").style.left = marginWindow;
 
-
     let buttonHeight = slides[pictureIndex].querySelector("img").offsetHeight / 2 - 10;
-    console.log(buttonHeight);
     document.getElementById("button-right").style.marginTop = buttonHeight;
     document.getElementById("button-left").style.marginTop = buttonHeight;
     
 }
 
+console.log(slides[pictureIndex].querySelector("img").height);
 resizeButtons();
 window.addEventListener('resize', resizeButtons());
