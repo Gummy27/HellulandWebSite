@@ -13,18 +13,15 @@ function showNextPrevSlide(action) {
 
 function resizeButtons() {
     let windowsWidth = document.querySelector("header");
-
-    let marginWindow = (windowsWidth.offsetWidth - windowsWidth.offsetWidth*0.9) / 2;
+    let marginWindow = String((windowsWidth.offsetWidth - windowsWidth.offsetWidth*0.9) / 2-2)+'px';
+    let buttonHeight = String(slides[pictureIndex].offsetHeight / 2 - 10)+'px';
 
     document.getElementById("button-right").style.right = marginWindow;
     document.getElementById("button-left").style.left = marginWindow;
 
-    let buttonHeight = slides[pictureIndex].querySelector("img").offsetHeight / 2 - 10;
     document.getElementById("button-right").style.marginTop = buttonHeight;
     document.getElementById("button-left").style.marginTop = buttonHeight;
     
 }
 
-console.log(slides[pictureIndex].querySelector("img").height);
-resizeButtons();
 window.addEventListener('resize', resizeButtons());

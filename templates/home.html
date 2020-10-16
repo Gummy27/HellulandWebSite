@@ -31,7 +31,12 @@
             onclick="showNextPrevSlide(-1)">
             <span><</span>
         </button>
-        <script src="/static/scripts/slideshow.js">console.log(slides[pictureIndex].querySelector("img").height);</script>
+        <script type="text/javascript" src="{{ url_for('static', filename='scripts/slideshow.js') }}"></script>
+        <script>
+            window.onload = function() {
+                resizeButtons();
+            }
+        </script>
     </section>
 </article>
 {% endblock %} 

@@ -5,12 +5,12 @@ let windowsWidth = document.querySelector("header");
 let maxWidth = 0;
 
 function resizeDropDown() {
-    dropDownRight = (windowsWidth.offsetWidth - windowsWidth.offsetWidth*0.9) / 2;
+    dropDownRight = String((windowsWidth.offsetWidth - windowsWidth.offsetWidth*0.9) / 2)+'px';
     dropDown.style.right = dropDownRight;
 
     maxWidth = document.getElementById("logo").offsetWidth;
     for(let i = 0; i < links.length; i++) {
-        links[i].style.width = maxWidth;
+        links[i].style.width = maxWidth+'px';
     }
 }
 
