@@ -20,31 +20,26 @@
           .homeGrid h1 {
             margin: 0;
             font-weight: bold;
-            font-size: 2.8em; }
+            font-size: 2.8em;
+            padding: 0; }
 
 .home {
   padding-bottom: 50px; }
 
-  .moreHome {
+  .slideInSlideshow {
     position: absolute;
-    font-size: 20px;
-    padding: 5px;
-    top: 29em;
-    left: 47%;
-    background-color: white;
-    color: #f14e51;
-    border-radius: 5px; }
+    width: 80%;
+    height: auto;
+    z-index: 0; }
 
-    .slideInSlideshow {
+    .slideshow-button {
       position: absolute;
-      width: 90%;
-      height: auto;
-      z-index: 0; }
+      z-index: 1;
+      padding: 10px; }
 
-      .slideshow-button {
-        position: absolute;
-        z-index: 1;
-        padding: 10px; }
+      #videoPreviewSection {
+        display: flex;
+        justify-content: space-between; }
 
 .about {
   display: grid;
@@ -211,9 +206,9 @@ body {
         padding-bottom: 10px; }
 
         article {
-          padding: 10;
+          padding: 10px;
           margin: 0 auto;
-          max-width: 90%; }
+          max-width: 80%; }
 
           a {
             color: white;

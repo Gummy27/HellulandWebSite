@@ -17,7 +17,7 @@
         </div>
         <a href="/projects/shortMovies/glethiPakkinn"><img src="/static/pictures/shortMovies/glethiPakkinn.jpg" width=400 height=600></a>
     </section>
-    <section>
+    <section id="slideshowSection">
         {% for picture in slideshowPics %}
         <div class="slideInSlideshow" style="display: none;">
             <img src="{{ picture }}" width=100% height=100%>
@@ -35,8 +35,15 @@
         <script>
             window.onload = function() {
                 resizeButtons();
+                resizeDropDown();
             }
         </script>
+    </section>
+    <section id="videoPreviewSection">
+        <iframe height="100%" src="https://www.youtube.com/embed/kkQyTno7hy4" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/XSq-xOtW4tU" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/jSxPx0xjnD4" frameborder="0" allowfullscreen></iframe>
+        <script type="text/javascript" src="/static/scripts/displayingVideosInBlock.js"></script>
     </section>
 </article>
 {% endblock %} 

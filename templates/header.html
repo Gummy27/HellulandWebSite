@@ -2,8 +2,8 @@
     <div class="">
         <nav class="valmynd">
             <div id="logo">
-                <a href="{{ url_for('home') }}"><img src="/static/pictures/HL_Whole.png" alt="Logo" width="70" height="70"></a>
-                <a class="logoText" href="{{ url_for('home') }}"><img src="/static/pictures/texti_PR_shade.png" alt="Logo" width="140" height=auto></a>
+                <a href="{{ url_for('home') }}"><img src="/static/pictures/logo/HL_Whole.png" alt="Logo" width="70" height="70"></a>
+                <a class="logoText" href="{{ url_for('home') }}"><img src="/static/pictures/logo/texti_PR_shade.png" alt="Logo" width="140" height=auto></a>
             </div>
             <!--<p class="seperator">/ / /</p>-->
             <a class="mainLinks interface" href="{{ url_for('home') }}">Helluland</a>
@@ -18,7 +18,12 @@
             </div>
             <a class="mainLinks interface" href="{{ url_for('gallery') }}">Gallery</a>
             <a class="mainLinks interface" href="{{ url_for('about') }}">Um okkur</a>
-            <script src="/static/scripts/dynamicDropDown.js">resizeDropDown();</script>
+            <script text="text/javascript" src="/static/scripts/dynamicDropDown.js"></script>
+            <script>
+                window.onload = function() {
+                    resizeDropDown();
+                }
+            </script>
             <script src="/static/scripts/viewing.js"></script>
         </nav>
     </div>

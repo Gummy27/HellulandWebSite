@@ -1,5 +1,7 @@
 let slides = document.getElementsByClassName("slideInSlideshow");
 let pictureIndex = 0;
+let slideshowBody = document.getElementById("slideshowSection")
+
 slides[pictureIndex].style.display = "block";
 slides[0].style.display = "block";
 
@@ -13,15 +15,16 @@ function showNextPrevSlide(action) {
 
 function resizeButtons() {
     let windowsWidth = document.querySelector("header");
-    let marginWindow = String((windowsWidth.offsetWidth - windowsWidth.offsetWidth*0.9) / 2-2)+'px';
+    let marginWindow = String((windowsWidth.offsetWidth - windowsWidth.offsetWidth*0.8) / 2-2)+'px';
     let buttonHeight = String(slides[pictureIndex].offsetHeight / 2 - 10)+'px';
+
+    slideshowBody.style.paddingBottom = String(slides[pictureIndex].offsetHeight+30)+'px';
 
     document.getElementById("button-right").style.right = marginWindow;
     document.getElementById("button-left").style.left = marginWindow;
 
     document.getElementById("button-right").style.marginTop = buttonHeight;
-    document.getElementById("button-left").style.marginTop = buttonHeight;
-    
+    document.getElementById("button-left").style.marginTop = buttonHeight; 
 }
 
-window.addEventListener('resize', resizeButtons());
+window.addEventListener('resize', resizeButtons);
