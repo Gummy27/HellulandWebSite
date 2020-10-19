@@ -37,7 +37,7 @@
         padding-top: 30px;
         padding-bottom: 30px;
         justify-content: center;
-        font-size: 1.5em;
+        font-size: 1.6em;
         text-align: center;
     }
 }
@@ -46,19 +46,12 @@
     padding-top: 30px;
 }
 
-.mainLinks:nth-child(odd) {
+.mainLinks {
     background-color: $third;
-    
-}
-.mainLinks:nth-child(odd):hover {
-    color: $fourth;
 }
 
-.mainLinks:nth-child(even) {
+.mainLinks:hover {
     background-color: $fourth;
-}
-.mainLinks:nth-child(even):hover {
-    color: $third;
 }
 
 .dropdown {
@@ -66,8 +59,8 @@
     display: none;
     justify-content: right;
     text-align: right;
-    padding-top: 20px;
-    background-color: none;
+    padding-top: 10px;
+    background-color: $fourth;
     a {
         font-size: 18px;
         padding: 0;
@@ -76,6 +69,7 @@
 }
 
 .dropdownActivate:hover .dropdown {
+    margin-top: 10px;
     display: flex;
 }
 
