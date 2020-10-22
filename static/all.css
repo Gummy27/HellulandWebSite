@@ -28,7 +28,6 @@
 
   .slideInSlideshow {
     position: absolute;
-    width: 75%;
     height: auto;
     z-index: 0;
     justify-content: center; }
@@ -144,6 +143,7 @@
       text-decoration: underline; }
 
       #logo {
+        padding-left: 20px;
         text-align: left;
         display: inline-block;
         background-color: #8bcfb6; }
@@ -193,6 +193,41 @@
     padding-bottom: 50px;
     color: red; }
 
+    .hamburgerMenu {
+      display: none; }
+
+      .hamburgerDropdown {
+        display: none;
+        text-align: left;
+        font-size: 1.4em;
+        padding-left: 40px; }
+        .hamburgerDropdown a {
+          display: block;
+          padding-top: 10px; }
+
+.hamburgerDropdownDropdown {
+  display: none; }
+  .hamburgerDropdownDropdown dl {
+    margin: 0; }
+
+@media screen and (max-width: 1274px) {
+  #logo a:nth-child(2) {
+    display: none;   }
+}
+
+@media screen and (max-width: 900px) {
+  .valmynd {
+    display: flex;
+    justify-content: space-between;   }
+    .mainLinks {
+      display: none;   }
+      .hamburgerMenu {
+        text-align: right;
+        display: block;
+        padding-right: 20px;
+        padding-top: 10px;   }
+}
+
 body {
   text-align: center;
   color: white;
@@ -203,7 +238,7 @@ body {
     background-color: #f14e51; }
 
     main {
-      min-height: 1200px; }
+      min-height: 800px; }
 
       footer {
         padding-top: 10px;
@@ -212,7 +247,7 @@ body {
         article {
           padding: 10px;
           margin: 0 auto;
-          max-width: 75%; }
+          max-width: 1448px; }
 
           a {
             color: white;
@@ -222,12 +257,25 @@ body {
               text-decoration: underline; }
 
 .project {
+  padding: 0;
   padding-right: 70px;
   padding-left: 70px;
   display: grid;
   grid-template-columns: 1fr 2fr; }
+  .project div {
+    padding-bottom: 20px; }
 
-  .projectsText {
-    text-align: left; }
-    .projectsText h2 {
-      margin-top: 0; }
+.projectsText {
+  text-align: left; }
+  .projectsText h2 {
+    margin-top: 0; }
+
+@media screen and (max-width: 900px) {
+  .project div:nth-child(odd) {
+    display: block;   }
+    .project div:nth-child(odd) img {
+      width: 100%;
+      height: auto;   }
+  .project div:nth-child(even) {
+    display: none;   }
+}

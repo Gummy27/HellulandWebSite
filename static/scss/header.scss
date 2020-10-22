@@ -19,6 +19,7 @@
 .current { text-decoration: underline; }
 
 #logo {
+    padding-left: 20px;
     text-align: left;
     display: inline-block;
     background-color: $third;
@@ -76,4 +77,49 @@
 .dropdownActivate:hover { 
     padding-bottom: 50px;
     color: red; 
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+.hamburgerDropdown {
+    display: none;
+    text-align: left;
+    font-size: 1.4em;
+    padding-left: 40px;
+    a {
+        display: block;
+        padding-top: 10px;
+    }
+}
+.hamburgerDropdownDropdown {
+    display: none;
+    dl {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1274px) {
+
+    #logo a:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .valmynd {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mainLinks {
+        display: none;
+    }
+    .hamburgerMenu {
+        text-align: right;
+        display: block;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
 }

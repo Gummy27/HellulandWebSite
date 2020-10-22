@@ -13,18 +13,41 @@ function showNextPrevSlide(action) {
     }
 }
 
-function resizeButtons() {
-    let windowsWidth = document.querySelector("header");
-    let marginWindow = String((windowsWidth.offsetWidth - windowsWidth.offsetWidth*0.75) / 2-2)+'px';
-    let buttonHeight = String(slides[pictureIndex].offsetHeight / 2 - 10)+'px';
+function resizeSlideshow() {
+    let windowsWidth = document.querySelector("header").offsetWidth;
+
+    let imageWidth;
+    let imageRight;
+    if(windowsWidth > 1440) { 
+        let windowMargin = windowsWidth - 1440;
+        
+        imageWidth = windowsWidth - windowMargin;
+        imageRight = windowMargin / 2;
+
+        console.log(windowMargin);
+        document.getElementById("button-right").style.right = (windowMargin/2-20)+'px';
+        document.getElementById("button-left").style.left = (windowMargin/2-20)+'px';
+
+    } else {
+        imageWidth = windowsWidth-20;
+        imageRight = 10;
+
+        document.getElementById("button-right").style.right = 0;
+        document.getElementById("button-left").style.left = 0;
+    }
+
+    for(let i = 0; i < slides.length; i++) {
+        slides[i].querySelector("img").style.width = imageWidth+'px';
+        slides[i].style.right = imageRight+'px';
+    }
 
     slideshowBody.style.paddingBottom = String(slides[pictureIndex].offsetHeight+30)+'px';
 
-    document.getElementById("button-right").style.right = marginWindow;
-    document.getElementById("button-left").style.left = marginWindow;
+
+    let buttonHeight = String(slides[pictureIndex].offsetHeight / 2 - 25)+'px';
 
     document.getElementById("button-right").style.marginTop = buttonHeight;
     document.getElementById("button-left").style.marginTop = buttonHeight; 
 }
 
-window.addEventListener('resize', resizeButtons);
+window.addEventListener('resize', resizeSlideshow);

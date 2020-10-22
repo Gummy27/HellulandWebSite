@@ -3,7 +3,9 @@
         <nav class="valmynd">
             <div id="logo">
                 <a href="{{ url_for('home') }}"><img src="/static/pictures/logo/HL_Whole.png" alt="Logo" width="70" height="70"></a>
-                <a class="logoText" href="{{ url_for('home') }}"><img src="/static/pictures/logo/texti_PR_shade.png" alt="Logo" width="140" height=auto></a>
+                <a class="logoText" href="{{ url_for('home') }}">
+                    <img src="/static/pictures/logo/texti_PR_shade.png" alt="Logo" width="140" height=auto>
+                </a>
             </div>
             <!--<p class="seperator">/ / /</p>-->
             <a class="mainLinks interface" href="{{ url_for('home') }}">Helluland</a>
@@ -24,7 +26,30 @@
                     resizeDropDown();
                 }
             </script>
+            
+            <div class="hamburgerMenu" onclick="hamburgerClick()">
+                <img src="/static/pictures/icons/menu.svg" height="50px" width="auto" >
+            </div>
             <script src="/static/scripts/viewing.js"></script>
         </nav>
+
+
+        <div id="hamburgerDropdown" class="hamburgerDropdown">
+            <a  href="{{ url_for('home') }}">Helluland</a>
+            <div dropdownActivate>
+                <a id="dropdownParent" onclick="hamburgerDropdownVerkefni()">Verkefni</a>
+                <nav id="hamburgerDropdownDropdown" class="hamburgerDropdownDropdown">
+                    <dl>
+                        <dd><a href="{{ url_for('projects', media='shortMovies') }}">- Stuttmyndir</a></dd>
+                        <dd><a href="{{ url_for('projects', media='music') }}">- Tónlist</a></dd>
+                        <dd><a href="{{ url_for('projects', media='podcasts') }}">- Hlaðvörp</a></dd>
+                        <dd><a href="{{ url_for('projects', media='comingSoon') }}">- Væntanlegt</a></dd>
+                    </dl>
+                </nav>
+            </div>
+            <a href="{{ url_for('gallery') }}">Gallery</a>
+            <a href="{{ url_for('about') }}">Um okkur</a>
+        </div>
+        <script type="text/javascript" src="/static/scripts/hamburgerDropdown.js"></script>
     </div>
 </article>

@@ -1,13 +1,32 @@
 .project {
+    padding: 0;
     padding-right: 70px;
     padding-left: 70px;
     display: grid;
     grid-template-columns: 1fr 2fr;
+
+    div {
+        padding-bottom: 20px;
+    }
 }
 
 .projectsText {
     text-align: left;
     h2 {
         margin-top: 0;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .project div:nth-child(odd){
+        display: block;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .project div:nth-child(even) {
+        display: none;
     }
 }

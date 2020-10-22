@@ -3,17 +3,16 @@
 {% block content %}
 <article>
     <h1> {{ displayMedia }} </h1>
-    <main class="project">
+    <section class="project">
         {% for project in projects %}
             <div>
-                <img src="/static/pictures/shortMovies/{{project}}.jpg", width=200, height=300> 
+                <img src="/static/pictures/shortMovies/{{ project }}.jpg", width=200, height=auto> 
             </div>
             <div class="projectsText">
-                {% include "/projects/"+media+"/"+project+".html" %}
+                {% include "/projects/"+media+"/"+project+".tpl" %}
                 <a href="{{ url_for('project', media=media, name=project) }}"><h3>Nánar</h3></a>
             </div>
         {% endfor %}
-        <script src="/static/scripts/paragraph.js"></script>
-    </main>
+    </section>
 </article>
 {% endblock %} 

@@ -24,15 +24,15 @@
         </div>
         {% endfor %}
         <div id="button-right" class="slideshow-button" onclick="showNextPrevSlide(1)">
-            <img src="/static/pictures/right-arrow.svg" height="50px" width="auto">
+            <img src="/static/pictures/icons/right-arrow.svg" height="50px" width="auto">
         </div>
         <div id="button-left" class="slideshow-button" onclick="showNextPrevSlide(-1)">
-            <img src="/static/pictures/right-arrow.svg" height="50px" width="auto" style="transform: scaleX(-1);">
+            <img src="/static/pictures/icons/right-arrow.svg" height="50px" width="auto" style="transform: scaleX(-1);">
         </div>
         <script type="text/javascript" src="{{ url_for('static', filename='scripts/slideshow.js') }}"></script>
         <script>
             window.onload = function() {
-                resizeButtons();
+                resizeSlideshow();
                 resizeDropDown();
             }
         </script>
