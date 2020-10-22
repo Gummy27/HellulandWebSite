@@ -5,7 +5,7 @@ let windowsWidth = document.querySelector("header");
 let maxWidth = 0;
 
 function resizeDropDown() {
-    dropDownRight = String((windowsWidth.offsetWidth - windowsWidth.offsetWidth*0.8) / 2)+'px';
+    dropDownRight = String((windowsWidth.offsetWidth - windowsWidth.offsetWidth*0.75) / 2)+'px';
     dropDown.style.right = dropDownRight;
 
     maxWidth = document.getElementById("logo").offsetWidth;

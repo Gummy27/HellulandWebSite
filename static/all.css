@@ -28,18 +28,27 @@
 
   .slideInSlideshow {
     position: absolute;
-    width: 80%;
+    width: 75%;
     height: auto;
-    z-index: 0; }
+    z-index: 0;
+    justify-content: center; }
 
     .slideshow-button {
       position: absolute;
       z-index: 1;
-      padding: 10px; }
+      padding: 13px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      fill: red; }
+      .slideshow-button img {
+        fill: red; }
 
-      #videoPreviewSection {
-        display: flex;
-        justify-content: space-between; }
+.slideshow-button:hover img {
+  color: red; }
+
+#videoPreviewSection {
+  display: flex;
+  justify-content: space-between; }
 
 .about {
   display: grid;
@@ -203,7 +212,7 @@ body {
         article {
           padding: 10px;
           margin: 0 auto;
-          max-width: 80%; }
+          max-width: 75%; }
 
           a {
             color: white;

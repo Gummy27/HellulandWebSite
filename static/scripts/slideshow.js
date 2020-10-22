@@ -15,7 +15,7 @@ function showNextPrevSlide(action) {
 
 function resizeButtons() {
     let windowsWidth = document.querySelector("header");
-    let marginWindow = String((windowsWidth.offsetWidth - windowsWidth.offsetWidth*0.8) / 2-2)+'px';
+    let marginWindow = String((windowsWidth.offsetWidth - windowsWidth.offsetWidth*0.75) / 2-2)+'px';
     let buttonHeight = String(slides[pictureIndex].offsetHeight / 2 - 10)+'px';
 
     slideshowBody.style.paddingBottom = String(slides[pictureIndex].offsetHeight+30)+'px';

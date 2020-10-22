@@ -41,12 +41,28 @@
     width: $screenWidth;
     height: auto;
     z-index: 0;
+    justify-content: center;
 }
 
 .slideshow-button {
     position: absolute;
     z-index: 1;
-    padding: 10px;
+    padding: 13px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    // Takkinn er fíngerður
+    fill: red;
+    img {
+        fill: red;
+    }
+
+}
+
+.slideshow-button:hover {
+    img {
+        color: red;
+    }
 }
 
 // Videos Preview Section
