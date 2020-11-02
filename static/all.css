@@ -210,7 +210,7 @@
   .hamburgerDropdownDropdown dl {
     margin: 0; }
 
-@media screen and (max-width: 1274px) {
+@media screen and (max-width: 1290px) {
   #logo a:nth-child(2) {
     display: none;   }
 }
