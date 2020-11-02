@@ -174,36 +174,41 @@
       background-color: #7d3982; }
 
       .dropdown {
-        position: absolute;
         display: none;
+        position: absolute;
         justify-content: right;
-        text-align: right;
+        text-align: center;
         padding-top: 10px;
-        background-color: #7d3982; }
+        background-color: #7d3982;
+        z-index: 1; }
         .dropdown a {
-          font-size: 18px;
+          text-align: center;
+          display: block;
+          z-index: 23;
+          font-size: 20px;
           padding: 0;
           padding-bottom: 10px; }
 
-.dropdownActivate:hover .dropdown {
-  margin-top: 10px;
-  display: flex; }
+.verkefniLinkActive {
+  background-color: #7d3982; }
 
-  .dropdownActivate:hover {
-    padding-bottom: 50px;
-    color: red; }
+  .dropdownAnimation {
+    display: block; }
 
-    .hamburgerMenu {
-      display: none; }
+    .dropdownActivate:hover {
+      cursor: pointer; }
 
-      .hamburgerDropdown {
-        display: none;
-        text-align: left;
-        font-size: 1.4em;
-        padding-left: 40px; }
-        .hamburgerDropdown a {
-          display: block;
-          padding-top: 10px; }
+      .hamburgerMenu {
+        display: none; }
+
+        .hamburgerDropdown {
+          display: none;
+          text-align: left;
+          font-size: 1.4em;
+          padding-left: 40px; }
+          .hamburgerDropdown a {
+            display: block;
+            padding-top: 10px; }
 
 .hamburgerDropdownDropdown {
   display: none; }

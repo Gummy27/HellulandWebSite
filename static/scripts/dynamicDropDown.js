@@ -1,15 +1,20 @@
+function toggleDropdown() {
+    let dropDown = document.getElementById("dropdown");
+    if(!dropDown.classList.contains("dropdownAnimation")) {
+        document.getElementsByClassName("dropdownActivate")[0].classList.add("verkefniLinkActive");
+        dropDown.classList.add("dropdownAnimation");
+    } else {
+        dropDown.classList.remove("dropdownAnimation");
+        document.getElementsByClassName("dropdownActivate")[0].classList.remove("verkefniLinkActive");
+    }
+}
+
 function resizeDropDown() {
-    let windowsWidth = document.querySelector("header").offsetWidth;
     let dropDown = document.getElementById("dropdown");
     let links = dropDown.querySelectorAll('a');
 
-    if(windowsWidth > 1440) {
-        dropDown.style.right = String((windowsWidth - 1440) / 2)+'px';
-    } else {
-        dropDown.style.right = '0';
-    }
-
     let maxWidth = document.getElementById("logo").offsetWidth;
+    console.log(maxWidth);
     for(let i = 0; i < links.length; i++) {
         links[i].style.width = maxWidth+'px';
     }
