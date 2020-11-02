@@ -6,13 +6,35 @@
     <section class="project">
         {% for project in projects %}
             <div>
-                <img src="/static/pictures/shortMovies/{{ project }}.jpg", width=200, height=auto> 
+                <a href="{{ url_for('project', media=media, name=project) }}"><img src="/static/pictures/shortMovies/{{ project }}.jpg", width="200px", height=auto></a>
             </div>
             <div class="projectsText">
                 {% include "/projects/"+media+"/"+project+".tpl" %}
                 <a href="{{ url_for('project', media=media, name=project) }}"><h3>Nánar</h3></a>
             </div>
         {% endfor %}
+        <script>
+            function resizeProjectImages() { 
+                if(window.innerWidth < 900) {
+                    imageParent = document.getElementsByClassName("project")[0]
+                    projectImages = imageParent.querySelectorAll("img");
+                    for(let i = 0; i < projectImages.length; i++) {
+                        projectImages[i].style.width = imageParent.offsetWidth - 60 + "px";
+                    }
+                } else {
+                    projectImages = document.getElementsByClassName("project")[0].querySelectorAll("img");
+                    if(projectImages.style != "200px") {
+                        for(let i = 0; i < projectImages.length; i++) {
+                            projectImages[i].style.width = "200px";
+                        }
+                    }
+                }
+            }
+
+            window.addEventListener("resize", resizeProjectImages);
+
+            resizeProjectImages();
+        </script>
     </section>
 </article>
 {% endblock %} 

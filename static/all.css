@@ -258,8 +258,6 @@ body {
 
 .project {
   padding: 0;
-  padding-right: 70px;
-  padding-left: 70px;
   display: grid;
   grid-template-columns: 1fr 2fr; }
   .project div {
@@ -271,11 +269,19 @@ body {
     margin-top: 0; }
 
 @media screen and (max-width: 900px) {
-  .project div:nth-child(odd) {
-    display: block;   }
-    .project div:nth-child(odd) img {
-      width: 100%;
-      height: auto;   }
+  .project {
+    display: block;
+    text-align: center;   }
+    .project div:nth-child(odd) {
+      text-align: center;
+      justify-content: center;
+      display: block;   }
+      .project div:nth-child(odd) img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 100%;
+        height: auto;   }
   .project div:nth-child(even) {
     display: none;   }
 }
