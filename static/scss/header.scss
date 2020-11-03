@@ -26,16 +26,19 @@
     a img { 
         padding-right: 10px; 
         background-color: $third;
+
     }
 }
 
-.logoText { padding-top: 20px; }
+.logoImage img { padding-top: 5px; }
+
+.logoText { padding-top: 0; }
 
 .valmynd { 
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     a {
-        padding-top: 30px;
+        padding-top: 35px;
         padding-bottom: 30px;
         justify-content: center;
         font-size: 1.6em;
@@ -44,7 +47,7 @@
 }
 
 .dropdownActivate {
-    padding-top: 30px;
+    padding-top: 35px;
 }
 
 .mainLinks {

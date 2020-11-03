@@ -15,13 +15,10 @@ function resizeVideoPreview() {
             videoBlock[i].style.height = videoWidth*0.5625+"px";
         }
     } else {
-        console.log("this is kinda owrkin!");
         for(let i = 0; i < videoBlock.length; i++) {
-            videoWidth = window.innerWidth-30;
-            console.log("Yes!");
+            videoWidth = window.innerWidth-40;
             videoBlock[i].style.width = videoWidth + "px";
             videoBlock[i].style.height = videoWidth*0.5625 + "px";
-            console.log(videoBlock[i].style.width);
         }
     }
 }

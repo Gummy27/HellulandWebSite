@@ -14,7 +14,6 @@ function resizeDropDown() {
     let links = dropDown.querySelectorAll('a');
 
     let maxWidth = document.getElementById("logo").offsetWidth;
-    console.log(maxWidth);
     for(let i = 0; i < links.length; i++) {
         links[i].style.width = maxWidth+'px';
     }

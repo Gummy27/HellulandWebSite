@@ -170,21 +170,24 @@
           padding-right: 10px;
           background-color: #8bcfb6; }
 
-.logoText {
-  padding-top: 20px; }
+.logoImage img {
+  padding-top: 5px; }
 
-  .valmynd {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
-    .valmynd a {
-      padding-top: 30px;
-      padding-bottom: 30px;
-      justify-content: center;
-      font-size: 1.6em;
-      text-align: center; }
+  .logoText {
+    padding-top: 0; }
+
+    .valmynd {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+      .valmynd a {
+        padding-top: 35px;
+        padding-bottom: 30px;
+        justify-content: center;
+        font-size: 1.6em;
+        text-align: center; }
 
 .dropdownActivate {
-  padding-top: 30px; }
+  padding-top: 35px; }
 
   .mainLinks {
     background-color: #8bcfb6; }
