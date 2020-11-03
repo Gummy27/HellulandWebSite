@@ -69,3 +69,19 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 1054px) {
+    #videoPreviewSection {
+        display: block;
+        justify-content: center;
+        text-align: center;
+
+        iframe {
+            margin: 0 auto;
+            display: block;
+            padding-bottom: 30px;
+
+            width: 90%;
+        }
+    }
+}

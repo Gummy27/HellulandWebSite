@@ -13,3 +13,11 @@
         }
     }
 }
+
+@media screen and (max-width: 774px) {
+    .about {
+        justify-content: center;
+        margin: 0 auto;
+        display: block;
+    }
+}

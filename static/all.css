@@ -49,6 +49,18 @@
   display: flex;
   justify-content: space-between; }
 
+  @media screen and (max-width: 1054px) {
+    #videoPreviewSection {
+      display: block;
+      justify-content: center;
+      text-align: center;   }
+      #videoPreviewSection iframe {
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 30px;
+        width: 90%;   }
+}
+
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr; }
@@ -61,6 +73,13 @@
       display: block;
       padding-left: 10px;
       padding-right: 10px; }
+
+@media screen and (max-width: 774px) {
+  .about {
+    justify-content: center;
+    margin: 0 auto;
+    display: block;   }
+}
 
 .footer {
   color: #f14e51;
